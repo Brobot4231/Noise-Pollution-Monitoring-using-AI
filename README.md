@@ -1,47 +1,102 @@
-# AI-Powered Noise Pollution Monitoring System
+# 🔊 Silent Sentinel — AI-Powered Noise Pollution Monitoring System
 
-A modern noise monitoring dashboard built with Next.js, Tailwind CSS, Firebase, and GenKit AI tooling. This project is designed to detect, classify, and visualize noise pollution in real time, with support for threshold alerts, geolocation tagging, and AI-driven noise classification.
+> Real-time ambient noise monitoring, AI classification, and geolocated alerts.
 
-## Project Overview
+---
 
-This application helps monitor ambient noise levels and surface potential pollution hotspots. It combines real-time noise data, AI-based classification, and an interactive dashboard to provide insights into environmental sound events.
+## 📌 Overview
 
-## Key Features
+Silent Sentinel captures and analyzes ambient sound to help identify noise pollution hotspots, trigger threshold-based alerts, and provide actionable suggestions. The app combines browser microphone input, GenKit AI flows for classification, and a responsive dashboard for visualization and historical analysis.
 
-- Real-time noise monitoring and level tracking
-- AI-powered noise classification (traffic, construction, human speech, etc.)
-- Threshold alerts for dangerous or unwanted noise levels
-- Geolocation tagging for noise events
-- Dashboard overview with historical, health, and alert cards
-- Responsive UI built with Tailwind CSS and Radix UI components
+---
 
-## Tech Stack
+## ✨ Features
 
-- Next.js 15
-- React 18
-- TypeScript
-- Tailwind CSS
-- Firebase
-- GenKit AI (`@genkit-ai/next`, `@genkit-ai/googleai`)
-- Zod for schema validation
-- React Hook Form
-- Recharts for data visualization
+- 🔊 Real-time noise level capture and smoothing
+- 🧠 AI-powered classification of sound types (traffic, construction, speech, etc.)
+- 🚨 Threshold monitoring with alerting and escalation options
+- 📍 Geolocation tagging for each recorded event
+- 🗺️ Interactive heatmap and historical trend charts
+- 🩺 Health and exposure suggestions based on noise levels
+- ♿ Responsive UI with accessible components
 
-### Prerequisites
+---
 
-- Node.js 20+ installed
-- npm or pnpm installed
+## 🛠️ Tech Stack
 
-### Install Dependencies
+| Category | Tools |
+|----------|-------|
+| **Frontend** | Next.js 15, React 18, TypeScript |
+| **Styling** | Tailwind CSS, Radix UI |
+| **AI** | GenKit (@genkit-ai/next, @genkit-ai/googleai) |
+| **Realtime / Persistence** | Firebase |
+| **Validation** | Zod |
+| **Forms** | React Hook Form |
+| **Charts** | Recharts |
+
+---
+
+## ⚙️ Installation
 
 ```bash
+# Clone repository
+git clone <repo-url>
+cd AI-Powered-Noise-Pollution-Monitoring-System-main
+
+# Install dependencies
 npm install
 ```
 
-### Run in Development
+### Requirements
+
+- Node.js 20+
+- npm (or pnpm)
+
+---
+
+## 🚀 Development
 
 ```bash
+# Run the dev server (Turbopack)
 npm run dev
 ```
 
-The app will start on port `9002` by default.
+The app runs by default on port `9002`.
+
+### Useful scripts
+
+- `npm run build` — Build for production
+- `npm run start` — Start production server
+- `npm run lint` — Run linters
+- `npm run typecheck` — Run TypeScript checks
+- `npm run genkit:dev` — Start GenKit AI flows in dev mode
+- `npm run genkit:watch` — Start GenKit in watch mode
+
+---
+
+## 🧭 Usage
+
+1. Start the dev server: `npm run dev`
+2. Allow microphone access when prompted in the browser
+3. Configure monitoring thresholds via the dashboard
+4. View live noise levels, classification, and geolocation heatmap
+
+---
+
+## 🔮 Future Improvements
+
+- Add persistent user accounts and per-user thresholds
+- Offline buffering and batch upload for intermittent connectivity
+- Edge deployment with an optimized model (TensorFlow Lite) for mobile devices
+- Automated export of noise event reports (CSV / PDF)
+- Integrate additional sensors (air quality, vibration) for richer context
+
+---
+
+## 🙏 Acknowledgements
+
+- GenKit for AI flow tooling
+- Radix UI and Tailwind CSS for UI primitives
+- Firebase for realtime and storage services
+
+> **Disclaimer:** This project is provided for research and monitoring purposes. It is not a substitute for professional environmental assessment and should be used in accordance with local privacy and recording laws.
